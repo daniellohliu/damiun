@@ -1,0 +1,213 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117; /* Fondo negro/azulado muy moderno */
+  color: #ffffff; /* Texto blanco principal */
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #38bdf8; /* Azul brillante y llamativo */
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #94a3b8; /* Gris claro */
+}
+
+.card-puntos {
+  background: #161b22; /* Tarjeta negra elegante */
+  border: 2px solid #38bdf8; /* Borde azul brillante */
+  padding: 20px 30px;
+  border-radius: 16px;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2); /* Sombra azulada */
+  margin-bottom: 25px;
+}
+
+.card-puntos h2, .card-puntos p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.lista-habitos {
+  background: #161b22;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #30363d;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.lista-habitos h3 {
+  color: #38bdf8;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 12px 15px;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  transition: transform 0.2s ease; /* Efecto suave al pasar el mouse */
+}
+
+/* Pequeña animación cuando pasas el mouse por el hábito */
+li:hover {
+  transform: scale(1.02);
+  border-color: #38bdf8;
+}
+
+.btn-completar {
+  background-color: #38bdf8; /* Botón azul llamativo */
+  color: #0d1117; /* Texto negro para contraste fuerte */
+  font-weight: bold;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-completar:hover {
+  background-color: #0ea5e9; /* Un azul un poco más intenso al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.btn-completar:active {
+  transform: scale(0.95); /* Efecto de presionar */
+}
+/* Estilos para el Personaje Avatar */
+.personaje-container {
+  margin-bottom: 15px;
+}
+
+.avatar-flotante {
+  font-size: 4rem;
+  display: inline-block;
+  /* Animación de flotado continuo */
+  animation: flotar 3s ease-in-out infinite;
+  user-select: none;
+}
+
+/* Animación de flotar suavemente */
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animación cuando ganas puntos/subes de nivel */
+.animacion-celebracion {
+  animation: celebrar 0.6s ease-in-out;
+}
+
+@keyframes celebrar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4) rotate(15deg); }
+  100% { transform: scale(1); }
+}
+
+/* Estilos para el Personaje Avatar */
+.personaje-container {
+  margin-bottom: 15px;
+}
+
+.avatar-flotante {
+  font-size: 4rem;
+  display: inline-block;
+  /* Animación de flotado continuo */
+  animation: flotar 3s ease-in-out infinite;
+  user-select: none;
+}
+
+/* Animación de flotar suavemente */
+@keyframes flotar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animación cuando ganas puntos/subes de nivel */
+.animacion-celebracion {
+  animation: celebrar 0.6s ease-in-out;
+}
+
+@keyframes celebrar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4) rotate(15deg); }
+  100% { transform: scale(1); }
+}
+
+.avatar-estado {
+  font-size: 0.9rem;
+  color: #38bdf8;
+  margin-top: 5px;
+  font-weight: bold;
+}
+/* Estilos para el formulario de agregar hábitos */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#nuevo-habito-input {
+  flex: 1;
+  padding: 10px 14px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#nuevo-habito-input:focus {
+  border-color: #38bdf8;
+}
+
+#btn-agregar {
+  background-color: #38bdf8;
+  color: #0d1117;
+  font-weight: bold;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#btn-agregar:hover {
+  background-color: #0ea5e9;
+  transform: scale(1.03);
+}

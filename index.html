@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangemi - Hábitos Gamificados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🚀 Proyecto Dangemi</h1>
+    <p>¡Convierte tus hábitos en un juego y sube de nivel!</p>
+  </header>
+
+  <main>
+    <!-- Tarjeta del Personaje y Puntos -->
+    <section class="card-puntos">
+      <div class="personaje-container">
+        <div id="avatar" class="avatar-flotante">🤖</div>
+        <p class="avatar-estado" id="estado-avatar">¡Listo para entrenar!</p>
+      </div>
+
+      <h2>Puntos: <span id="puntos">0</span> ⭐</h2>
+      <p>Nivel Actual: <span id="nivel">1</span> 🏆</p>
+    </section>
+
+    <!-- Única Sección de Hábitos -->
+    <section class="lista-habitos">
+      <h3>Mis Hábitos Diarios</h3>
+
+      <div class="input-container">
+        <input type="text" id="nuevo-habito-input" placeholder="Escribe un nuevo hábito..." />
+        <button id="btn-agregar">+ Agregar</button>
+      </div>
+
+      <ul id="contenedor-habitos">
+        <li>
+          <span>📚 Estudiar 30 minutos</span>
+          <button class="btn-completar">Completar (+10 pts)</button>
+        </li>
+        <li>
+          <span>💧 Tomar 2L de agua</span>
+          <button class="btn-completar">Completar (+10 pts)</button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
